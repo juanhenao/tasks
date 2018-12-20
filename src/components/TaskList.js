@@ -10,7 +10,9 @@ const generateList = tasks => {
 };
 
 const TaskList = props => {
-  return <div>{generateList(props.tasks)}</div>;
+  return (
+    <div className="ui relaxed divided list">{generateList(props.tasks)}</div>
+  );
 };
 
 const mapStateToProps = state => {
